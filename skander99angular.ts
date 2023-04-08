@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
-
 @Component({
   selector: 'appppp-example',
+
   template: `
     <h1>Bienvenue sur la page d'exemple !</h1>
     <p>{{ message }}</p>
@@ -12,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleComponent implements OnInit {
   message: string = '';
-  messagefrommaster: string
+    messagefrommaster: string
+
 
   ngOnInit() {
-   // this.setMessage();
+    this.setMessage();
+
   }
 
   private setMessage() {
